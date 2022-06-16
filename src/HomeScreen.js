@@ -49,7 +49,7 @@ export default function HomeScreen() {
             </HStack>
         </HStack>
 
-        <View w="100%" alignItems="center" >
+        <View w="100%">
         <HStack space={2}>
         <Box>
       <Popover trigger={triggerProps => {
@@ -58,7 +58,7 @@ export default function HomeScreen() {
             </Button>; }}>
         </Popover>
         </Box>
-        <Input value={po} onChangeText={setPo} shadow={1} _light={{bg: "coolGray.100"}} _dark={{bg: "coolGray.800"}}  width={"70%"} placeholder="Nhập PO"  />
+        <Input value={po} onChangeText={setPo} shadow={1} _light={{bg: "coolGray.100"}} _dark={{bg: "coolGray.800"}}  width={"80%"} placeholder="Nhập PO"  />
       </HStack>
       </View>
       

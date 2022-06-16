@@ -1,5 +1,5 @@
 import React from "react";
-import { View,  HStack, Text,  Box, StatusBar, Input } from "native-base";
+import { View,  HStack, Text,  Box, StatusBar, Input, VStack  } from "native-base";
 
 
 export default function MenuDown() {
@@ -15,15 +15,14 @@ export default function MenuDown() {
             </HStack>
         </HStack>
         
-        <HStack space={2}>
-        <View flex={1}>
-            <Text> OBS_NU </Text>
-             <Input _light={{bg: "coolGray.100"}} _dark={{bg: "coolGray.800"}} rounded="xl" width="100" placeholder="OBS_NU"  />
-             <Text> OBS_SEQ_NU </Text>
-             <Input _light={{bg: "coolGray.100"}} _dark={{bg: "coolGray.800"}} rounded="xl" width="100" placeholder="OBS_SEQ_NU"  />
-             </View>
-            </HStack>
-            
+        <VStack space={2}>
+            <View>
+                <Text> OBS_NU </Text>
+                <Input _light={{bg: "coolGray.100"}} _dark={{bg: "coolGray.800"}} rounded="xl" width="250" placeholder="OBS_NU"  />
+                <Text> OBS_SEQ_NU </Text>
+                <Input _light={{bg: "coolGray.100"}} _dark={{bg: "coolGray.800"}} rounded="xl" width="250" placeholder="OBS_SEQ_NU"  />
+            </View>
+        </VStack>
     </View>
     );
 }

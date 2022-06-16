@@ -12,12 +12,18 @@ export default function MenuDown() {
                 <Text color="white" fontSize="20" fontWeight="bold">
                  DownLoad
                 </Text>
-                
             </HStack>
         </HStack>
-        <HStack>
-             <Input shadow={2} _light={{bg: "coolGray.100"}} _dark={{bg: "coolGray.800"}} rounded="xl" width={"90%"} placeholder="Nhập PO"  />
+        
+        <HStack space={2}>
+        <View flex={1}>
+            <Text> OBS_NU </Text>
+             <Input _light={{bg: "coolGray.100"}} _dark={{bg: "coolGray.800"}} rounded="xl" width="100" placeholder="LINE"  />
+             <Text> OBS_SEQ_NU </Text>
+             <Input _light={{bg: "coolGray.100"}} _dark={{bg: "coolGray.800"}} rounded="xl" width="100" placeholder="LINE"  />
+             </View>
             </HStack>
+            
     </View>
     );
 }

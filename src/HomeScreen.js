@@ -49,11 +49,11 @@ export default function HomeScreen() {
             </HStack>
         </HStack>
 
-        <View w="100%">
+        <View w="100%" alignItems="center">
         <HStack space={2}>
         <Box>
       <Popover trigger={triggerProps => {
-      return <Button title="Delete" onPress={() => showConfirmDialog()}>
+      return <Button title="Delete" onPress={() => showConfirmDialog()} w="100%" alignItems="center">
               Delete 
             </Button>; }}>
         </Popover>
@@ -64,7 +64,7 @@ export default function HomeScreen() {
       
       <HStack space={2}>
      <View flex={1} alignItems ="center" flexDirection={"row"}>
-      <Text> Line </Text>
+      <Text alignItems="center"> Line </Text>
       <Input _light={{bg: "coolGray.100"}} _dark={{bg: "coolGray.800"}} rounded="xl" width="100" placeholder="LINE"  />
       </View>
       <View flex={1}>

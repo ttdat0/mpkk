@@ -35,18 +35,20 @@ export default function MenuDown() {
                 </Text>
             </HStack>
         </HStack>
-        <View style={{ marginTop: 10}}>
-        <HStack space ={1} alignItems="center" px="2" pb="2" w="100%">
+        <View style={{ marginTop: 5}}>
+        <HStack space ={1} alignItems="center" px="2" pb="2" pt="2" w="100%">
                 <Text> OBS_NU: </Text>
-                <Input _light={{bg: "coolGray.100"}} _dark={{bg: "coolGray.800"}} rounded="xl" width="250" placeholder="0"  />
+                <Input _light={{bg: "coolGray.100"}} _dark={{bg: "coolGray.800"}} rounded="xl" width="280" placeholder="0"  />
         </HStack>
-        <HStack space ={1} alignItems="center" px="2" pb="2" w="100%">
+        <HStack space ={1} alignItems="center" px="2" pb="2" pt="2" w="100%">
         <Text> OBS_SEQ_NU: </Text>
         <Input _light={{bg: "coolGray.100"}} _dark={{bg: "coolGray.800"}} rounded="xl" width="250" placeholder="0"  />
         </HStack>
         </View>
-        <View style={{ marginTop: 5}}  p="2">
-        <HStack space ={1} alignItems="center" px="2" pb="2">
+
+        
+        <View style={{ marginTop: 5}}  px="2" pb="2" pt="2" alignItems="center" w="100%">
+        <HStack space ={1}>
             <Button title="Delete" w="50%">
                 Delete old data
             </Button>
@@ -54,7 +56,7 @@ export default function MenuDown() {
                 Download
             </Button>
         </HStack>
-        <HStack space ={1} alignItems="center" px="2" pb="2" style={{ marginTop: 10}}>
+        <HStack space ={1} style={{ marginTop: 5}}>
          <Button onPress={displayDatepicker} w="50%"> {selectedDate?selectedDate:<Text>Hay chon ngay</Text>} </Button>
                {isDisplayDate && (
                   <DateTimePicker
@@ -69,13 +71,13 @@ export default function MenuDown() {
                 Upload
             </Button>
          </HStack>
-         <HStack space ={1} alignItems="center" px="2" pb="2" w="100%" style={{ marginTop: 10}}>
+         <HStack space ={1} alignItems="center"  px="2" pb="2" pt="2" w="100%" style={{ marginTop: 10}}>
              <Text> Tot Scan (prs):  </Text>
              <Input _light={{bg: "coolGray.100"}} _dark={{bg: "coolGray.800"}} rounded="xl" width="250" placeholder="0"  />
          </HStack>
-         <HStack space ={1} alignItems="center" px="2" pb="2" w="100%">
+         <HStack space ={1} alignItems="center"  px="2" pb="2" pt="2" w="100%">
              <Text> Total Upload (prs): </Text>
-             <Input _light={{bg: "coolGray.100"}} _dark={{bg: "coolGray.800"}} rounded="xl" width="250" placeholder="0"  />
+             <Input _light={{bg: "coolGray.100"}} _dark={{bg: "coolGray.800"}} rounded="xl" width="230" placeholder="0"  />
          </HStack>
         </View>
     </View>

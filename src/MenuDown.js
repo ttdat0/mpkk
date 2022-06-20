@@ -21,7 +21,6 @@ export default function MenuDown() {
  const displayDatepicker = () => {
     showMode('date');
  };
- 
     return(
     <View>
         <StatusBar bg="#3700B3" barStyle="light-content" />

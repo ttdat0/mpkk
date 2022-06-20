@@ -49,28 +49,28 @@ export default function HomeScreen() {
             </HStack>
         </HStack>
 
-        <View w="100%" alignItems="center">
-        <HStack space={2}>
-        <Box>
+        <View alignItems="center" p="2" >
+        <HStack space={2} px="2" pb="2">
+        <Box w="50%">
       <Popover trigger={triggerProps => {
-      return <Button title="Delete" onPress={() => showConfirmDialog()} w="100%" alignItems="center">
+      return <Button title="Delete" onPress={() => showConfirmDialog()} >
               Delete 
             </Button>; }}>
         </Popover>
         </Box>
-        <Input value={po} onChangeText={setPo} shadow={1} _light={{bg: "coolGray.100"}} _dark={{bg: "coolGray.800"}}  width={"80%"} placeholder="Nhập PO"  />
+        <Input value={po} onChangeText={setPo} shadow={1} _light={{bg: "coolGray.100"}} _dark={{bg: "coolGray.800"}}  w="50%" placeholder="Nhập PO" />
       </HStack>
       </View>
       
-      <HStack space={2}>
-     <View flex={1} alignItems ="center" flexDirection={"row"}>
-      <Text alignItems="center"> Line </Text>
-      <Input _light={{bg: "coolGray.100"}} _dark={{bg: "coolGray.800"}} rounded="xl" width="100" placeholder="LINE"  />
-      </View>
-      <View flex={1}>
+      <HStack space={2} px="2" pb="2" alignItems="center"  w="100%">
+     <View flex={1} alignItems ="center" flexDirection={"row"} w="50%">
+      <Text> Line </Text>
+      <Input _light={{bg: "coolGray.100"}} _dark={{bg: "coolGray.800"}} w="40%" placeholder="LINE"  />
+
+
       <FormControl w="3/4" maxW="100" isRequired isInvalid textAlign={"center"} flexDirection="row">
-        <FormControl.Label alignItems={"center"}> Mini Line </FormControl.Label>
-        <Select minWidth="100" accessibilityLabel="Choose Service" placeholder="Choose Service" rounded="md" _selectedItem={{ bg: "teal.600",endIcon: <CheckIcon size={5} />}}  mt="1">
+        <FormControl.Label  alignItems="center" w="50%" px="2" pb="2"> Mini Line </FormControl.Label>
+        <Select minWidth="130" accessibilityLabel="Choose Service" placeholder="Choose Service" rounded="md" _selectedItem={{ bg: "teal.600",endIcon: <CheckIcon size={5} />}}  mt="1">
           <Select.Item label="001" value="num"  />
           <Select.Item label="002" value="num1" />
           <Select.Item label="003" value="num2" />

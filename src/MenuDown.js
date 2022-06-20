@@ -48,16 +48,16 @@ export default function MenuDown() {
 
         
         <View style={{ marginTop: 5}}  px="2" pb="2" pt="2" alignItems="center" w="100%">
-        <HStack space ={1}>
-            <Button title="Delete" w="50%">
+        <HStack space ={1} >
+            <Button title="Delete" w="50%" h="50">
                 Delete old data
             </Button>
-            <Button title="Delete" w="50%">
+            <Button title="Delete" w="50%" h="50">
                 Download
             </Button>
         </HStack>
         <HStack space ={1} style={{ marginTop: 5}}>
-         <Button onPress={displayDatepicker} w="50%"> {selectedDate?selectedDate:<Text>Hay chon ngay</Text>} </Button>
+         <Button onPress={displayDatepicker} w="50%" h="50"> {selectedDate?selectedDate:<Text>Hay chon ngay</Text>} </Button>
                {isDisplayDate && (
                   <DateTimePicker
                      testID="dateTimePicker"
@@ -67,7 +67,7 @@ export default function MenuDown() {
                      display="default"
                      onChange={changeSelectedDate} />
          )}
-            <Button title="Delete" w="50%">
+            <Button title="Delete" w="50%" h="50">
                 Upload
             </Button>
          </HStack>

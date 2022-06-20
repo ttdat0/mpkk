@@ -69,14 +69,14 @@ export default function HomeScreen() {
 
 
       <FormControl w="3/4" maxW="100" isRequired isInvalid textAlign={"center"} flexDirection="row">
-        <FormControl.Label alignItems="center" px="2" pb="2" pt="2" w="50%"> Mini Line </FormControl.Label>
+        <FormControl.Label alignItems="center" px="2" pb="2" pt="2" w="50%" > Mini Line </FormControl.Label>
         <Select minWidth="140" accessibilityLabel="Choose Service" placeholder="Choose Service" rounded="md" _selectedItem={{ bg: "teal.600",endIcon: <CheckIcon size={5} />}}  mt="1">
-          <Select.Item label="001" value="num"  />
-          <Select.Item label="002" value="num1" />
-          <Select.Item label="003" value="num2" />
-          <Select.Item label="004" value="num3" />
-          <Select.Item label="005" value="num4" />
-          <Select.Item label="006" value="num5" />
+          <Select.Item label="001" value="num1"  />
+          <Select.Item label="002" value="num2" />
+          <Select.Item label="003" value="num3" />
+          <Select.Item label="004" value="num4" />
+          <Select.Item label="005" value="num5" />
+          <Select.Item label="006" value="num6" />
         </Select>
       </FormControl>
       </View>

@@ -46,7 +46,8 @@ export default function MenuDown() {
         </HStack>
         </View>
 
-        
+
+
         <View style={{ marginTop: 5}}  px="2" pb="2" pt="2" alignItems="center" w="100%">
         <HStack space ={1} >
             <Button title="Delete" w="50%" h="50">

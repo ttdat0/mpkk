@@ -38,38 +38,38 @@ export default function HomeScreen() {
   };
 
     return(
-    <View>
-        <StatusBar bg="#3700B3" barStyle="light-content" />
+<View>
+      <StatusBar bg="#3700B3" barStyle="light-content" />
         <Box safeAreaTop bg="#6200ee" />
-        <HStack bg="#6200ee" px="1" py="3" justifyContent="space-between" alignItems="center" w="100%">
+          <HStack bg="#6200ee" px="1" py="3" justifyContent="space-between" alignItems="center" w="100%">
             <HStack alignItems="center">
                 <Text color="white" fontSize="20" fontWeight="bold">
                     Home
                 </Text>
             </HStack>
-        </HStack>
+          </HStack>
 
-        <View alignItems="center" px="2" pb="2" pt="2" w="100%" >
+    <View alignItems="center" px="2" pb="2" pt="2" w="100%" >
         <HStack space={2}>
-        <Box w="50%">
-      <Popover trigger={triggerProps => {
-      return <Button title="Delete" onPress={() => showConfirmDialog()} >
+          <Box w="50%">
+            <Popover trigger={triggerProps => {
+       return <Button title="Delete" onPress={() => showConfirmDialog()} >
               Delete 
-            </Button>; }}>
-        </Popover>
-        </Box>
+              </Button>; }}>
+            </Popover>
+          </Box>
         <Input value={po} onChangeText={setPo} shadow={1} _light={{bg: "coolGray.100"}} _dark={{bg: "coolGray.800"}}  w="50%" placeholder="Nhập PO" />
       </HStack>
-      </View>
+    </View>
       
-      <HStack space={2} alignItems="center" px="2" pb="2" pt="2" w="100%">
-     <View flex={1} alignItems ="center" flexDirection={"row"} px="2" pb="2" pt="2" w="100%">
+  <HStack space={2} alignItems="center" px="2" pb="2" pt="2" w="100%">
+    <View flex={1} alignItems ="center" flexDirection={"row"} px="2" pb="2" pt="2" w="100%">
       <Text> Line </Text>
-      <Input _light={{bg: "coolGray.100"}} _dark={{bg: "coolGray.800"}} w="40%" placeholder="LINE"  />
+        <Input _light={{bg: "coolGray.100"}} _dark={{bg: "coolGray.800"}} w="40%" placeholder="LINE"  />
 
 
-      <FormControl w="3/4" maxW="100" isRequired isInvalid textAlign={"center"} flexDirection="row">
-        <FormControl.Label alignItems="center" px="2" pb="2" pt="2" w="50%" > Mini Line </FormControl.Label>
+    <FormControl w="3/4" maxW="100" isRequired isInvalid textAlign={"center"} flexDirection="row">
+      <FormControl.Label alignItems="center" px="2" pb="2" pt="2" w="50%" > Mini Line </FormControl.Label>
         <Select minWidth="140" accessibilityLabel="Choose Service" placeholder="Choose Service" rounded="md" _selectedItem={{ bg: "teal.600",endIcon: <CheckIcon size={5} />}}  mt="1">
           <Select.Item label="001" value="num1"  />
           <Select.Item label="002" value="num2" />
@@ -79,8 +79,8 @@ export default function HomeScreen() {
           <Select.Item label="006" value="num6" />
         </Select>
       </FormControl>
-      </View>
-      </HStack>
     </View>
+  </HStack>
+</View>
     );
 }

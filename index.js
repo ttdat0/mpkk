@@ -1,13 +1,8 @@
-import AntDesignFontFaceCSS from "@native-base/icons/FontsCSS/AntDesignFontFaceCSS";
-import MaterialIconsFontFaceCSS from "@native-base/icons/FontsCSS/MaterialIconsFontFaceCSS";
+import { registerRootComponent } from 'expo';
 
-const fontsCSS = AntDesignFontFaceCSS + MaterialIconsFontFaceCSS;
+import App from './App';
 
-const style = document.createElement("style");
-style.type = "text/css";
-if (style.styleSheet) {
-  style.styleSheet.cssText += fontsCSS;
-} else {
-  style.appendChild(document.createTextNode(fontsCSS));
-}
-document.head.appendChild(style); 
+// registerRootComponent calls AppRegistry.registerComponent('main', () => App);
+// It also ensures that whether you load the app in Expo Go or in a native build,
+// the environment is set up appropriately
+registerRootComponent(App);

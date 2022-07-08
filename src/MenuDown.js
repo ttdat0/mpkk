@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View,  HStack, Text,  Box, StatusBar, Input, VStack, Button, SafeAreaView} from "native-base";
+import { View,  HStack, Text,  Box, StatusBar, Input, VStack, Button, SafeAreaView, TextArea} from "native-base";
 import Moment from 'moment';
 import DateTimePicker from '@react-native-community/datetimepicker';
 
@@ -74,11 +74,13 @@ export default function MenuDown() {
          </HStack>
          <HStack space ={1} alignItems="center"  px="2" pb="2" pt="2" w="100%" style={{ marginTop: 10}}>
              <Text> Tot Scan (prs):  </Text>
-             <Input _light={{bg: "coolGray.100"}} _dark={{bg: "coolGray.800"}} rounded="xl" width="250" placeholder="0"  />
+             <TextArea alignItems="center" aria-label="t1Disabled" placeholder="0" isDisabled width="250" h="50" rounded="xl" />
+             {/* <Input _light={{bg: "coolGray.100"}} _dark={{bg: "coolGray.800"}} rounded="xl" width="250" placeholder="0"  /> */}
          </HStack>
          <HStack space ={1} alignItems="center"  px="2" pb="2" pt="2" w="100%">
              <Text> Total Upload (prs): </Text>
-             <Input _light={{bg: "coolGray.100"}} _dark={{bg: "coolGray.800"}} rounded="xl" width="230" placeholder="0"  />
+             <TextArea alignItems="center" aria-label="t1Disabled" placeholder="0" isDisabled width="230" h="50"rounded="xl" />
+             {/* <Input _light={{bg: "coolGray.100"}} _dark={{bg: "coolGray.800"}} rounded="xl" width="230" placeholder="0"  /> */}
          </HStack>
         </View>
     </View>

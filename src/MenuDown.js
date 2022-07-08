@@ -74,12 +74,12 @@ export default function MenuDown() {
          </HStack>
          <HStack space ={1} alignItems="center"  px="2" pb="2" pt="2" w="100%" style={{ marginTop: 10}}>
              <Text> Tot Scan (prs):  </Text>
-             <TextArea alignItems="center" aria-label="t1Disabled" placeholder="0" isDisabled width="250" h="50" rounded="xl" />
+             <TextArea alignItems="center" aria-label="t1Disabled" placeholder="0" isDisabled width="250" h="50"/>
              {/* <Input _light={{bg: "coolGray.100"}} _dark={{bg: "coolGray.800"}} rounded="xl" width="250" placeholder="0"  /> */}
          </HStack>
          <HStack space ={1} alignItems="center"  px="2" pb="2" pt="2" w="100%">
              <Text> Total Upload (prs): </Text>
-             <TextArea alignItems="center" aria-label="t1Disabled" placeholder="0" isDisabled width="230" h="50"rounded="xl" />
+             <TextArea alignItems="center" aria-label="t1Disabled" placeholder="0" isDisabled width="230" h="50" />
              {/* <Input _light={{bg: "coolGray.100"}} _dark={{bg: "coolGray.800"}} rounded="xl" width="230" placeholder="0"  /> */}
          </HStack>
         </View>

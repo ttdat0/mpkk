@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View,  HStack, Text,  Box, StatusBar, Input, VStack, Button, SafeAreaView, TextArea} from "native-base";
+import { View,  HStack, Text,  Box, StatusBar, Input,  Button,  TextArea} from "native-base";
 import Moment from 'moment';
 import DateTimePicker from '@react-native-community/datetimepicker';
 

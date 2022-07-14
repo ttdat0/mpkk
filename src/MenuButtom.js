@@ -5,6 +5,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 import HomeScreen from "./HomeScreen";
 import MenuDown from "./MenuDown";
+import HomeTest from "./HomeTest";
 
 
 const Tab = createMaterialBottomTabNavigator();
@@ -37,7 +38,7 @@ function MenuButtom() {
     >
       <Tab.Screen
         name="Feed"
-        component={HomeScreen}
+        component={HomeTest}
         options={{
         
           tabBarLabel: 'Home',

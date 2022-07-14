@@ -6,6 +6,7 @@ import { Alert } from "react-native";
 export default function HomeScreen() {
   const Toast = useToast();
   const [po, setPo] = useState('');
+  let [service, setService] = useState("");
 
   const showConfirmDialog = () => {
     return Alert.alert(
@@ -39,8 +40,8 @@ export default function HomeScreen() {
 
     return(
 <View>
-      <StatusBar bg="#3700B3" barStyle="light-content" />
-        <Box safeAreaTop bg="#6200ee" />
+      {/* <StatusBar bg="#3700B3" barStyle="light-content" />
+        <Box safeAreaTop bg="#6200ee" /> */}
           <HStack bg="#6200ee" px="1" py="3" justifyContent="space-between" alignItems="center" w="100%">
             <HStack alignItems="center">
                 <Text color="white" fontSize="20" fontWeight="bold">
@@ -66,11 +67,9 @@ export default function HomeScreen() {
     <View flex={1} alignItems ="center" flexDirection={"row"} px="2" pb="2" pt="2" w="100%">
       <Text> Line </Text>
         <Input _light={{bg: "coolGray.100"}} _dark={{bg: "coolGray.800"}} w="40%" placeholder="LINE"  />
-
-
-    <FormControl w="3/4" maxW="100" isRequired isInvalid textAlign={"center"} flexDirection="row">
+    {/* <FormControl w="3/4" maxW="100" isRequired isInvalid textAlign={"center"} flexDirection="row">
       <FormControl.Label alignItems="center" px="2" pb="2" pt="2" w="50%" > Mini Line </FormControl.Label>
-        <Select minWidth="140" rounded="md" _selectedItem={{ bg: "teal.600",endIcon: <CheckIcon size={5} />}}  mt="1">
+        <Select minWidth="140" rounded="md" accessibilityLabel="Choose Service" placeholder="Choose Service"  _selectedItem={{endIcon: <CheckIcon size={5} />}}  mt="1">
 
           <Select.Item label="001" value="num1" />
           <Select.Item label="002" value="num2" />
@@ -79,7 +78,20 @@ export default function HomeScreen() {
           <Select.Item label="005" value="num5" />
           <Select.Item label="006" value="num6" />
         </Select>
-      </FormControl>
+      </FormControl> */}
+      <View style={{flexDirection: 'row',alignItems: 'center',justifyContent: 'center'}}>
+        <Text> Line </Text>
+        <Select selectedValue={service} minWidth="200" accessibilityLabel="Choose Service" placeholder="Choose Service" _selectedItem={{
+        bg: "teal.600",
+        endIcon: <CheckIcon size="5" />
+      }} mt={1} onValueChange={itemValue => setService(itemValue)}>
+          <Select.Item label="UX Research" value="ux" />
+          <Select.Item label="Web Development" value="web" />
+          <Select.Item label="Cross Platform Development" value="cross" />
+          <Select.Item label="UI Designing" value="ui" />
+          <Select.Item label="Backend Development" value="backend" />
+        </Select>
+      </View>
     </View>
   </HStack>
 </View>

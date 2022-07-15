@@ -45,9 +45,9 @@ const HomeTest = () => {
                     Home
                 </Text>
         </View>
-        <View style={{margin:10}}>
-            <VStack space={4} alignItems="center">
-                <HStack space={3}>
+        <View space={2} alignItems="center" style={{margin:10}}>
+            <VStack space={2} alignItems="center">
+                <HStack space={2}>
                 <Popover trigger={triggerProps => {
                 return <Button title="Delete" onPress={() => showConfirmDialog()} >
                         Delete 
@@ -59,7 +59,7 @@ const HomeTest = () => {
                     <Text>Line</Text>
                     <Input  w="30%" placeholder="Nhập Line" />
                     <Text>Mini Line</Text>
-                    <Select selectedValue={service} width="150" accessibilityLabel="Choose Service" placeholder="Choose Service" _selectedItem={{
+                    <Select selectedValue={service} width="150" accessibilityLabel="Chọn Mini Line" placeholder="Chọn Mini Line" _selectedItem={{
                             bg: "teal.600",
                             endIcon: <CheckIcon size="5" />
                         }} mt={1} onValueChange={itemValue => setService(itemValue)}>
@@ -69,7 +69,7 @@ const HomeTest = () => {
                                 <Select.Item label="004" value="num4" />
                                 <Select.Item label="005" value="num5" />
                                 <Select.Item label="006" value="num6" />
-                            </Select>
+                    </Select>
                 </HStack>
             </VStack>
         </View>

@@ -1,5 +1,5 @@
 import React,{useState} from "react";
-import { View,  HStack, Text,  Box, StatusBar, Button, Input, Select, FormControl, CheckIcon, WarningOutlineIcon, Badge, Popover,useToast } from "native-base";
+import { View,  HStack, Text,  Box, Button, Input, Select, CheckIcon, Popover,useToast } from "native-base";
 import { Alert } from "react-native";
 
 
@@ -54,7 +54,7 @@ export default function HomeScreen() {
         <HStack space={2}>
           <Box w="50%">
             <Popover trigger={triggerProps => {
-       return <Button title="Delete" onPress={() => showConfirmDialog()} >
+    return <Button title="Delete" onPress={() => showConfirmDialog()} >
               Delete 
               </Button>; }}>
             </Popover>

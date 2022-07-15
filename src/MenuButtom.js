@@ -6,7 +6,7 @@ import { createMaterialBottomTabNavigator } from '@react-navigation/material-bot
 import HomeScreen from "./HomeScreen";
 import MenuDown from "./MenuDown";
 import HomeTest from "./HomeTest";
-
+import MenuDownTest from "./MenuDownTest";
 
 const Tab = createMaterialBottomTabNavigator();
 
@@ -49,7 +49,7 @@ function MenuButtom() {
       />
       <Tab.Screen
         name="Profile"
-        component={MenuDown}
+        component={MenuDownTest}
         options={{
           tabBarLabel: 'Download',
           tabBarIcon: ({ color }) => (

@@ -26,7 +26,7 @@ export default function MenuDown() {
  };
     return(
     <View>
-        <StatusBar bg="#3700B3" barStyle="light-content" />
+        {/* <StatusBar bg="#3700B3" barStyle="light-content" /> */}
         <Box safeAreaTop bg="#6200ee" />
         <HStack bg="#6200ee" px="1" py="3" justifyContent="space-between" alignItems="center" w="100%">
             <HStack alignItems="center" px="2" pb="2">

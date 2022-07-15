@@ -1,17 +1,46 @@
-import { View, Text, Center,HStack,VStack,Button,Input,Select,CheckIcon } from 'native-base'
-
+import { View, Text, Center,HStack,VStack,Button,Input,Select,CheckIcon, Popover, useToast , Box} from 'native-base'
 import React,{useState} from 'react'
+import { Alert } from "react-native";
 
 const HomeTest = () => {
+  const Toast = useToast();
+  const [po, setPo] = useState('');
+  let [service, setService] = useState("");
 
-    const [po, setPo] = useState('');
-
-    let [service, setService] = React.useState("");
+    const showConfirmDialog = () => {
+      return Alert.alert(
+        "Are your sure?",
+        "Are you sure you want to remove this beautiful box?",
+        [
+          // The "Yes" button
+          {
+            text: "Yes",
+            onPress: () => {
+              // setShowBox(false);
+              // alert("Ban da xoa thanh cong " + po);
+              Toast.show({
+                render: () => {
+                  return <Box bg="emerald.500" px="2" py="1" rounded="sm" mb={5}>
+                          Bạn đã xoá thành công
+                        </Box>;
+                }
+              });
+              setPo('');
+            },
+          },
+          // The "No" button
+          // Does nothing but dismiss the dialog when tapped
+          {
+            text: "No",
+          },
+        ]
+      );
+    };
 
   return (
     <View style={{ flex:1}}>
       <Center>
-        <View style={{backgroundColor:'blue',width:'100%',height:100,alignItems: 'center',justifyContent: 'center'}}>
+        <View style={{backgroundColor:'#3700B3', width:'100%', height:100, alignItems: 'center',justifyContent: 'center'}}>
                 <Text color="white" fontSize="36" fontWeight="bold">
                     Home
                 </Text>
@@ -19,13 +48,17 @@ const HomeTest = () => {
         <View style={{margin:10}}>
             <VStack space={4} alignItems="center">
                 <HStack space={3}>
-                    <Button onPress={() => console.log("hello world")}>Delete</Button>
+                <Popover trigger={triggerProps => {
+                return <Button title="Delete" onPress={() => showConfirmDialog()} >
+                        Delete 
+                       </Button>; }}>
+                </Popover>
                     <Input value={po} onChangeText={setPo} w="75%" placeholder="Nhập PO" />
                 </HStack>
                 <HStack space={2} alignItems="center">
                     <Text>Line</Text>
                     <Input  w="30%" placeholder="Nhập Line" />
-                    <Text>MLine</Text>
+                    <Text>Mini Line</Text>
                     <Select selectedValue={service} width="150" accessibilityLabel="Choose Service" placeholder="Choose Service" _selectedItem={{
                             bg: "teal.600",
                             endIcon: <CheckIcon size="5" />

@@ -23,7 +23,7 @@ export default function MenuDownTest() {
  };
 
 
- 
+
  return (
     <View style={{ flex:1}}>
         <Center>
@@ -68,18 +68,18 @@ export default function MenuDownTest() {
                                 display="default"
                                 onChange={changeSelectedDate} />
                                 )}
-                            <Button title="Upload" w="50%" h="50">
+                        <Button title="Upload" w="50%" h="50">
                             Upload
-                            </Button>
+                        </Button>
                     </HStack>
                         <HStack space={1} alignItems="center">
                             <Text> Tot Scan (prs):  </Text>
                             <TextArea alignItems="center" aria-label="t1Disabled" placeholder="0" isDisabled width="70%" h="10"/>
                         </HStack>
-                            <HStack space={1} alignItems="center">
-                                <Text> Total Upload (prs): </Text>
-                                <TextArea alignItems="center" aria-label="t1Disabled" placeholder="0" isDisabled width="65%" h="10" />
-                            </HStack>
+                        <HStack space={1} alignItems="center">
+                            <Text> Total Upload (prs): </Text>
+                            <TextArea alignItems="center" aria-label="t1Disabled" placeholder="0" isDisabled width="65%" h="10" />
+                        </HStack>
                 </VStack>
             </View>
         </Center>

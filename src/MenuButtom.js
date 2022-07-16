@@ -3,8 +3,6 @@ import { Text, View } from "native-base";
 import { MaterialCommunityIcons} from "@expo/vector-icons";
 import { NavigationContainer } from '@react-navigation/native';
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
-import HomeScreen from "./HomeScreen";
-import MenuDown from "./MenuDown";
 import HomeTest from "./HomeTest";
 import MenuDownTest from "./MenuDownTest";
 

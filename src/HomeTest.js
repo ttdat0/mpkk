@@ -38,7 +38,7 @@ const HomeTest = () => {
     recentText: "I will call today.",
     avatarUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBwgu1A5zgPSvfE83nurkuzNEoXs9DMNr8Ww&usqp=CAU"
   }];
-  
+
     const showConfirmDialog = () => {
       return Alert.alert(
         "Are your sure?",
@@ -94,7 +94,7 @@ const HomeTest = () => {
                     <Select selectedValue={service} width="150" accessibilityLabel="Chọn Mini Line" placeholder="Chọn Mini Line" _selectedItem={{
                             bg: "teal.600",
                             endIcon: <CheckIcon size="5" />
-                        }} mt={1} onValueChange={itemValue => setService(itemValue)}>
+                            }} mt={1} onValueChange={itemValue => setService(itemValue)}>
                                 <Select.Item label="001" value="num1" />
                                 <Select.Item label="002" value="num2" />
                                 <Select.Item label="003" value="num3" />

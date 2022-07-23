@@ -51,7 +51,7 @@ function MenuButtom() {
         options={{
           tabBarLabel: 'Download',
           tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="arrow-down-bold" color={color} size={25} />
+            <MaterialCommunityIcons name="arrow-down-bold" color={color} size={25} type="Ionicons"/>
           ),
         }}
       />

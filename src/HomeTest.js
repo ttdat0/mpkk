@@ -85,11 +85,11 @@ const HomeTest = () => {
                         Delete 
                        </Button>; }}>
                 </Popover>
-                    <Input value={po} onChangeText={setPo} w="75%" placeholder="Nhập PO" />
+                    <Input value={po} onChangeText={setPo} w="75%" placeholder=" " />
                 </HStack>
                 <HStack space={2} alignItems="center">
                     <Text>Line</Text>
-                    <Input  w="30%" placeholder="Nhập Line" />
+                    <Input  w="30%" placeholder="Line" />
                     <Text>Mini Line</Text>
                     <Select selectedValue={service} width="150" accessibilityLabel="Chọn Mini Line" placeholder="Chọn Mini Line" _selectedItem={{
                             bg: "teal.600",
